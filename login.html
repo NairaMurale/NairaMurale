@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Login</title>
+
+	<style type="text/css">
+	@import url("estilo.css");
+	</style>
+
+	<Script language="javascript">
+
+		function login() {
+			var user=document.frm_login.txt_usuario.value;
+			var email=document.frm_login.txt_usuario.value; 
+			var pass=document.frm_login.txt_senha.value;
+
+			if((user=="fatec" || email=="fatec@sp.gov.br") && pass=="123a"){
+				alert("Conta validada com sucesso!");
+				window.location="http://www.cobasi.com.br";
+			}
+				else{
+					alert("Conta invalida!");
+					document.frm_login.txt_usuario.value="";
+					document.frm_login.txt_senha.value="";
+					document.frm_login.txt_usuario.focus();
+			}
+		}
+
+		function limpar() {
+			document.frm_login.txt_usuario.value="";
+			document.frm_login.txt_senha.value="";
+			document.frm_login.txt_usuario.focus();
+
+		}
+
+</Script>
+</head>
+<body>
+	<form name="frm_login">
+		<p>
+			<h2>Area de Segurança</h2>
+			<fieldset>
+				<legend>Identificação da Conta</legend>
+				Usuário ou E-mail:<br>
+				<input id="caixa" type="text" name="txt_usuario" size="40" maxlength="40" required><p>
+				Senha:<br>
+				<input id="caixa" type="password" name="txt_senha" size="40" maxlength="15" required><p>
+				<input id="botao" type="button" name="btn_login" value="ENTRAR" onClick="login()">&nbsp;&nbsp;
+				<input id="botao" type="button" name="btn_limpar" value="LIMPAR" onClick="limpar()">
+			</fieldset>
+		</form>
+	</body>
+</html>
+					

@@ -1,0 +1,44 @@
+<html>
+<!--Comentário-->
+<head>
+    <title>Produto</title>
+</head>
+    <body bgcolor="lightblue" text="black">
+<center>
+    <b><u><h2>ESCOLHA DE PRODUTOS</h2></u>
+</center>
+    <form name="frm_produto">
+<fieldset>
+    <legend>DADOS DO PRODUTO:</legend>
+    Nome do Produto: <br>
+    <input type="text" size="60" maxlength="60" required="yes>&nbsp;&nbsp;&nbsp
+    Valor:
+    <input type="number min="1" max="100">&nbsp
+    Quantidade: 
+    <input type="number" min="1" max="100">&nbsp;
+    Sexo:<input type="radio" name="sexo">Macho
+         <input type="radio" name="sexo">Fêmea
+         <p>
+
+    Selecione o tamanho do seu Pet:<br>
+<ul>
+<li><input type="checkbox" name="tamanho">Pequeno</li>
+<li><input type="checkbox" name="tamanho">Medio</li>
+<li><input type="checkbox" name="tamanho">Grande</li>
+</ul>
+    Selecione tipo do produto:<br>
+<select name="tipo">
+<option value="CO">Coleiras</option>
+<option value="PE">Peitorais</option>
+<option value="LG">Laços e Gravatas</option>
+<option value="CA">Cama</option>
+</select>
+</fieldset>
+<p>
+<center>
+<input type="submit" value="ENVIAR">&nbsp;&nbsp;&nbsp
+<input type="reset" value="LIMPAR">
+</center>
+</form>
+</body>
+</html>

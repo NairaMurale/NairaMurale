@@ -1,0 +1,43 @@
+<html>
+<!--Comentário-->
+<head>
+    <title>Formulário</title>
+</head>
+    <body bgcolor="LightBlue" text="black">
+<center>
+    <b><u><h2>CADASTRO DE CLIENTES</h2></u>
+</center>
+    <form name="frm_cadastro">
+<fieldset>
+    <legend>DADOS CADASTRAIS:</legend>
+    Nome do Cliente:<br>
+    <input type="text" size="60" maxlength="60" required="yes">&nbsp;&nbsp;&nbsp;<p>
+    Senha:<br>
+    <input type="password" name="txt_senha" size="20" maxlength="20"><p>
+    Observações Gerais:<br>
+<textarea cols="80" rows="5">Insira aqui suas observações</textarea><p>
+    Idade: <input type="number" min="1" max="100">&nbsp;&nbsp;&nbsp
+    Sexo: <input type="radio" name="sexo">Masculino
+        <input type="radio" name="sexo">Feminino <p>
+    Selecione o tamanho do seu Pet:<br>
+<ul>
+<li><input type="checkbox" name="cor">Pequeno</li>
+<li><input type="checkbox" name="cor">Medio</li>
+<li><input type="checkbox" name="cor">Grande</li>
+</ul>
+    Selecione sua Cidade:<br>
+<select name="cidades">
+<option value="SA">Sando Andre</option>
+<option value="SBC">Sao Bernardo</option>
+<option value="SCS">Sao Caetano</option>
+<option value="SP">Sao Paulo</option>
+</select>
+</fieldset>
+<p>
+<center>
+<input type="submit" value="ENVIAR">&nbsp;&nbsp;&nbsp
+<input type="reset" value="LIMPAR">
+</center>
+</form>
+</body>
+</html>
